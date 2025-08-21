@@ -1,5 +1,7 @@
 // Import the express module
 import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 // Instantiate an Express application
 const app = express();
