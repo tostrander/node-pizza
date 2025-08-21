@@ -18,7 +18,10 @@ app.get('/', (req, res) => {
 
     // Send our home page as a response to the client
     //res.sendFile(`${import.meta.dirname}/views/home.html`);
-    res.send('<h1>Hello from Vercel!</h1><p>Pizza app is working!</p>');
+//
+//     res.send('<h1>Hello from Vercel!</h1><p>Pizza app is working!</p>');
+
+    res.sendFile(path.join(__dirname, 'views', 'home.html'));
 });
 /*
 // Tell the server to listen on our specified port
