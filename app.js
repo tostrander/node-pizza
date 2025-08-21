@@ -11,7 +11,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Serve static files from the 'public' directory
-app.use(express.static('public'));
+//app.use(express.static('public'));
+
+// Vercel version
+app.use(exp.static(path.join(__dirname, 'public')));
+
 
 // Define the port number where our server will listen
 //const PORT = 3000;
