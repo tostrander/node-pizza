@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 //app.use(express.static('public'));
 
 // Vercel version
-app.use(exp.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Define the port number where our server will listen
